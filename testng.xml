@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test1">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+     
+       <class name="com.earnst.automationtest.CaPrice"/> 
+        <methods>
+         <include name="testCaPrice"/>
+         <include name="TestCATotalPrice"/>
+         <include name="TestCATotalPriceNotAcceptable"/>
+          <include name="TestCATotalPriceOutOfBound"/>
+        </methods>
+        <class name="com.earnst.automationtest.nyPrice"/> 
+        <methods>
+         <include name="testNYLionGiraffePrice"/>
+         <include name="TestNYTotalPrice"/>
+         <include name="TestNYTotalPriceNegativeQuantity"/>
+          <include name="TestNYTotalPriceOutOfBound"/>
+        </methods>
+        <class name="com.earnst.automationtest.OHPrice"/> 
+        <methods>
+         <include name="testOhTotalPrice"/>
+         <include name="testOhTotalPriceOfNegativeAndZero"/>
+         <include name="testOhTotalPriceOfOutofBoundAndInBoundValue"/>
+          <include name="testOhTotalPriceOfOutOfBoundValue"/>
+        </methods>
+     
+      
+       
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Suite -->
